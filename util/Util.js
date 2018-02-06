@@ -1,6 +1,7 @@
 class Util {
     log (tag, message) {
-          console.log(`${new Date()} ${tag}:  ${message}`);
+        // TODO: change logger
+        console.log(`${new Date()} ${tag}:  ${message}`);
     } 
 }
 
