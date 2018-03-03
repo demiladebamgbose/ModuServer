@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "migrate": "node scripts/run-migrations.js"
+    "migrate": "node scripts/run-migrations.js",
+    "dev": "./node_modules/.bin/nodemon ./server.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -28,6 +29,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-loopback": "^8.0.0",
     "eslint-plugin-import": "^2.9.0",
+    "nodemon": "^1.17.1",
     "nsp": "^2.1.0"
   },
   "repository": {
