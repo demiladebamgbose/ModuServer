@@ -19,3 +19,4 @@ node_modules/
 .strong-pm
 coverage
 npm-debug.log
+npm-debug.log.*
