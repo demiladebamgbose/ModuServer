@@ -38,5 +38,9 @@
   "PoiPost": {
     "dataSource": "db",
     "public": true
+  },
+  "Tag": {
+    "dataSource": "db",
+    "public": true
   }
 }
