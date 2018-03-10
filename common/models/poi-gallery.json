@@ -1,0 +1,23 @@
+{
+  "name": "POI_gallery",
+  "plural": "gallery",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "poi_id": {
+      "type": "number",
+      "required": true
+    },
+    "media_url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
