@@ -42,5 +42,9 @@
   "Tag": {
     "dataSource": "db",
     "public": true
+  },
+  "user_follow": {
+    "dataSource": null,
+    "public": true
   }
 }
