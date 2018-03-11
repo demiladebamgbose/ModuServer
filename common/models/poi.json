@@ -1,6 +1,5 @@
 {
-  "name": "POI",
-  "plural": "POIs",
+  "name": "Poi",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
