@@ -42,5 +42,9 @@
   "Tag": {
     "dataSource": "db",
     "public": true
+  },
+  "merchant_POI": {
+    "dataSource": null,
+    "public": true
   }
 }
