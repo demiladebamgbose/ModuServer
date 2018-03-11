@@ -38,5 +38,17 @@
   "Poi": {
     "dataSource": "db",
     "public": true
+  },
+  "PoiPost": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Reviews": {
+    "dataSource": "db",
+    "public": true
   }
 }
