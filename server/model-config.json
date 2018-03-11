@@ -36,7 +36,7 @@
     "public": false
   },
   "Poi": {
-    "dataSource": null,
+    "dataSource": "db",
     "public": true
   }
 }
