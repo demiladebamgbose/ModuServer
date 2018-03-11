@@ -42,5 +42,9 @@
   "Tag": {
     "dataSource": "db",
     "public": true
+  },
+  "Reviews": {
+    "dataSource": "db",
+    "public": true
   }
 }
