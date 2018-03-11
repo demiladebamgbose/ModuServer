@@ -42,5 +42,9 @@
   "Tag": {
     "dataSource": "db",
     "public": true
+  },
+  "POI_follow_table": {
+    "dataSource": null,
+    "public": true
   }
 }
