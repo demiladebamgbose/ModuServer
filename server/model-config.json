@@ -35,6 +35,10 @@
     "dataSource": "db",
     "public": false
   },
+  "Poi": {
+    "dataSource": "db",
+    "public": true
+  },
   "PoiPost": {
     "dataSource": "db",
     "public": true
