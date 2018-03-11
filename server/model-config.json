@@ -43,8 +43,8 @@
     "dataSource": "db",
     "public": true
   },
-  "reviews": {
-    "dataSource": null,
+  "Reviews": {
+    "dataSource": "db",
     "public": true
   }
 }
