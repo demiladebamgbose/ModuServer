@@ -9,6 +9,10 @@
     "role_id": {
       "type": "number",
       "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
