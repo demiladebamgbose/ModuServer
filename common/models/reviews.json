@@ -1,17 +1,16 @@
 {
-  "name": "reviews",
-  "plural": "reviews",
+  "name": "Reviews",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "user_id": {
+    "userId": {
       "type": "number",
       "required": true
     },
-    "POI_id": {
+    "poiId": {
       "type": "number",
       "required": true
     },
