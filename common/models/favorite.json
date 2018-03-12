@@ -1,6 +1,5 @@
 {
-  "name": "favorite",
-  "plural": "favorites",
+  "name": "Favorite",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
