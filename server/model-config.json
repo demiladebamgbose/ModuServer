@@ -43,8 +43,8 @@
     "dataSource": "db",
     "public": true
   },
-  "favorite": {
-    "dataSource": null,
+  "Favorite": {
+    "dataSource": "db",
     "public": true
   }
 }
