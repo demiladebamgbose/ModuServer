@@ -1,13 +1,12 @@
 {
-  "name": "POI_follow_table",
-  "plural": "y",
+  "name": "PoiFollow",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "user_id": {
+    "userId": {
       "type": "number",
       "required": true
     },
@@ -15,7 +14,7 @@
       "type": "date",
       "required": true
     },
-    "POI_id": {
+    "poiId": {
       "type": "number",
       "required": true
     }
