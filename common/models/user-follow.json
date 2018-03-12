@@ -1,0 +1,27 @@
+{
+  "name": "UserFollow",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "requestee_id": {
+      "type": "number",
+      "required": true
+    },
+    "requester_id": {
+      "type": "number",
+      "required": true
+    },
+    "approved": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
