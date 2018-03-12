@@ -1,16 +1,16 @@
 {
-  "name": "merchant_POI",
+  "name": "MerchantPoi",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "POI_id": {
+    "poiId": {
       "type": "number",
       "required": true
     },
-    "merchant_id": {
+    "merchantId": {
       "type": "number",
       "required": true
     }
