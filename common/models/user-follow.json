@@ -1,6 +1,5 @@
 {
-  "name": "user_follow",
-  "plural": "user_follows",
+  "name": "UserFollow",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
