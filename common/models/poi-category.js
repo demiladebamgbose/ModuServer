@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Poicategory) {
+module.exports = function(PoiCategory) {
 
 };

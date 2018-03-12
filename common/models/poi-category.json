@@ -1,17 +1,16 @@
 {
-  "name": "POI_category",
-  "plural": "poi_categories",
+  "name": "PoiCategory",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "tag_id": {
+    "tagId": {
       "type": "number",
       "required": true
     },
-    "POI_id": {
+    "poiId": {
       "type": "number",
       "required": true
     }
