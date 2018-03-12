@@ -1,17 +1,16 @@
 {
-  "name": "POI_gallery",
-  "plural": "gallery",
+  "name": "PoiGallery",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "poi_id": {
+    "poiId": {
       "type": "number",
       "required": true
     },
-    "media_url": {
+    "mediaUrl": {
       "type": "string",
       "required": true
     }
