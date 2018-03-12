@@ -43,8 +43,8 @@
     "dataSource": "db",
     "public": true
   },
-  "user_follow": {
-    "dataSource": null,
+  "UserFollow": {
+    "dataSource": "db",
     "public": true
   }
 }
