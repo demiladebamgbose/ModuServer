@@ -35,6 +35,10 @@
     "dataSource": "db",
     "public": false
   },
+  "Poi": {
+    "dataSource": "db",
+    "public": true
+  },
   "PoiPost": {
     "dataSource": "db",
     "public": true
@@ -44,6 +48,10 @@
     "public": true
   },
   "UserFollow": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Reviews": {
     "dataSource": "db",
     "public": true
   }
