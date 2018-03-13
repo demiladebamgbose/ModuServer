@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
+    "personId": {
       "type": "number",
       "required": true
     },
