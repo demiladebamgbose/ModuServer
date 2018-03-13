@@ -1,25 +1,18 @@
 {
-  "name": "Reviews",
+  "name": "PoiCategory",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
+    "tagId": {
       "type": "number",
       "required": true
     },
     "poiId": {
       "type": "number",
       "required": true
-    },
-    "rating": {
-      "type": "number",
-      "required": true
-    },
-    "comment": {
-      "type": "string"
     }
   },
   "validations": [],
