@@ -40,6 +40,11 @@
       "type": "hasMany",
       "model": "Favorite",
       "foreignKey": "personId"
+    },
+    "personMedia": {
+      "type": "hasMany",
+      "model": "PersonMedia",
+      "foreignKey": "personId"
     }
   },
   "acls": [],

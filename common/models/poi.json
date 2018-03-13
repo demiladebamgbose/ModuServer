@@ -45,6 +45,11 @@
       "type": "hasMany",
       "model": "Checkin",
       "foreignKey": "poiId"
+    },
+    "personMedia": {
+      "type": "hasMany",
+      "model": "PersonMedia",
+      "foreignKey": "poiId"
     }
   },
   "acls": [],
