@@ -1,24 +1,26 @@
 {
-  "name": "Reviews",
-  "base": "PersistedModel",
+  "name": "Person",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
-      "type": "number",
+    "firstname": {
+      "type": "string",
       "required": true
     },
-    "poiId": {
-      "type": "number",
+    "surname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
       "required": true
     },
-    "rating": {
-      "type": "number",
-      "required": true
-    },
-    "comment": {
+    "profilePicture": {
       "type": "string"
     }
   },
