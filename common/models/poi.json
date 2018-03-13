@@ -30,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "poiPosts": {
+      "type": "hasMany",
+      "model": "PoiPost",
+      "foreignKey": "poiId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
