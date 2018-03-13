@@ -30,6 +30,11 @@
       "type": "hasMany",
       "model": "Review",
       "foreignKey": "personId"
+    },
+    "checkins": {
+      "type": "hasMany",
+      "model": "Checkin",
+      "foreignKey": "personId"
     }
   },
   "acls": [],

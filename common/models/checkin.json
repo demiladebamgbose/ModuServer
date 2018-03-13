@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
+    },
+    "poi": {
+      "type": "belongsTo",
+      "model": "Poi",
+      "foreignKey": "poiId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
