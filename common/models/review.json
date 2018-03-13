@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
+    "personId": {
       "type": "number",
       "required": true
     },
@@ -23,7 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

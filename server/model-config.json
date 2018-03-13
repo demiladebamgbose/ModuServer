@@ -58,11 +58,11 @@
   "Checkin": {
     "dataSource": "db",
     "public": true
-  }, 
+  },
   "PoiFollow": {
     "dataSource": "db",
     "public": true
-  },  
+  },
   "MerchantPoi": {
     "dataSource": "db",
     "public": true
@@ -87,7 +87,7 @@
     "dataSource": "db",
     "public": true
   },
-  "Reviews": {
+  "Review": {
     "dataSource": "db",
     "public": true
   },
