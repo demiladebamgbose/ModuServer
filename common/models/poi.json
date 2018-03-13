@@ -30,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": "poiId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
