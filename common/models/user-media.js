@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Usermedia) {
+module.exports = function(UserMedia) {
 
 };
