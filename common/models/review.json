@@ -1,0 +1,29 @@
+{
+  "name": "Review",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "number",
+      "required": true
+    },
+    "poiId": {
+      "type": "number",
+      "required": true
+    },
+    "rating": {
+      "type": "number",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
