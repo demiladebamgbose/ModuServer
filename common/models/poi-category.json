@@ -1,0 +1,22 @@
+{
+  "name": "PoiCategory",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tagId": {
+      "type": "number",
+      "required": true
+    },
+    "poiId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

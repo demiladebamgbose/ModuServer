@@ -55,6 +55,10 @@
     "dataSource": "db",
     "public": true
   },
+  "PoiCategory": {
+    "dataSource": "db",
+    "public": true
+  },
   "PoiGallery": {
     "dataSource": "db",
     "public": true
