@@ -1,0 +1,22 @@
+{
+  "name": "MerchantPoi",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "poiId": {
+      "type": "number",
+      "required": true
+    },
+    "merchantId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
