@@ -1,12 +1,12 @@
 {
-  "name": "UserMedia",
+  "name": "PersonMedia",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "userId": {
+    "personId": {
       "type": "number",
       "required": true
     },

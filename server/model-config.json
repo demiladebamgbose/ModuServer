@@ -67,7 +67,7 @@
     "dataSource": "db",
     "public": true
   },
-  "UserMedia": {
+  "PersonMedia": {
     "dataSource": "db",
     "public": true
   },
@@ -83,7 +83,7 @@
     "dataSource": "db",
     "public": true
   },
-  "UserFollow": {
+  "PersonFollow": {
     "dataSource": "db",
     "public": true
   },
