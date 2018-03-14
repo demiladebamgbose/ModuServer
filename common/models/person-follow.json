@@ -1,5 +1,5 @@
 {
-  "name": "UserFollow",
+  "name": "PersonFollow",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

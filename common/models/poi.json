@@ -35,6 +35,11 @@
       "type": "hasMany",
       "model": "PoiPost",
       "foreignKey": "poiId"
+    },      
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": "poiId"
     }
   },
   "acls": [],
