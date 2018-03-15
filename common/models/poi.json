@@ -40,6 +40,11 @@
       "type": "hasMany",
       "model": "Review",
       "foreignKey": "poiId"
+    },
+    "checkins": {
+      "type": "hasMany",
+      "model": "Checkin",
+      "foreignKey": "poiId"
     }
   },
   "acls": [],
