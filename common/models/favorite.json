@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
