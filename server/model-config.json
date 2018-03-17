@@ -65,7 +65,7 @@
   },
   "MerchantPoi": {
     "dataSource": "db",
-    "public": true
+    "public": false
   },
   "PersonMedia": {
     "dataSource": "db",
