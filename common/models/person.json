@@ -39,7 +39,7 @@
     "favorites": {
       "type": "hasMany",
       "model": "Favorite",
-      "foreignKey": "userId"
+      "foreignKey": "personId"
     }
   },
   "acls": [],
