@@ -45,6 +45,12 @@
       "type": "hasMany",
       "model": "PersonMedia",
       "foreignKey": "personId"
+    },
+    "pois": {
+      "type": "hasMany",
+      "model": "Poi",
+      "foreignKey": "",
+      "through": "MerchantPoi"
     }
   },
   "acls": [],

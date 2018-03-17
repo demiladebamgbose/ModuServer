@@ -35,7 +35,7 @@
       "type": "hasMany",
       "model": "PoiPost",
       "foreignKey": "poiId"
-    },      
+    },
     "reviews": {
       "type": "hasMany",
       "model": "Review",
@@ -50,6 +50,12 @@
       "type": "hasMany",
       "model": "PersonMedia",
       "foreignKey": "poiId"
+    },
+    "merchants": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "",
+      "through": "MerchantPoi"
     }
   },
   "acls": [],
