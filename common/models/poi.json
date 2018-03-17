@@ -34,12 +34,34 @@
     "poiPosts": {
       "type": "hasMany",
       "model": "PoiPost",
-      "foreignKey": "poiId"
-    },      
+      "foreignKey": ""
+    },
     "reviews": {
       "type": "hasMany",
       "model": "Review",
       "foreignKey": "poiId"
+    },
+    "poiGalleries": {
+      "type": "hasMany",
+      "model": "PoiGallery",
+      "foreignKey": ""
+    },
+    "followers": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "",
+      "through": "PoiFollow"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": "",
+      "through": "PoiCategory"
+    },
+    "merchant": {
+      "type": "belongsTo",
+      "model": "MerchantPoi",
+      "foreignKey": "merchantId"
     }
   },
   "acls": [],
