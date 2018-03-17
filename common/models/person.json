@@ -35,6 +35,11 @@
       "type": "hasMany",
       "model": "Checkin",
       "foreignKey": "personId"
+    },
+    "favorites": {
+      "type": "hasMany",
+      "model": "Favorite",
+      "foreignKey": "personId"
     }
   },
   "acls": [],
