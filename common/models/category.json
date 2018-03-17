@@ -1,5 +1,6 @@
 {
-  "name": "Tag",
+  "name": "Category",
+  "plural": "categoties",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -13,16 +14,10 @@
   },
   "validations": [],
   "relations": {
-    "category": {
-      "type": "belongsTo",
-      "model": "Category",
-      "foreignKey": "categoryId"
-    },
-    "pois": {
+    "tags": {
       "type": "hasMany",
-      "model": "Poi",
-      "foreignKey": "poiId",
-      "through": "PoiCategory"
+      "model": "Tag",
+      "foreignKey": "categoryId"
     }
   },
   "acls": [],

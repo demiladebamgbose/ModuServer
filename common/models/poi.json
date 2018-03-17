@@ -41,6 +41,23 @@
       "model": "Review",
       "foreignKey": "poiId"
     },
+    "poiGalleries": {
+      "type": "hasMany",
+      "model": "PoiGallery",
+      "foreignKey": "poiId"
+    },
+    "followers": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "poiId",
+      "through": "PoiFollow"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": "poiId",
+      "through": "PoiCategory"
+    },
     "checkins": {
       "type": "hasMany",
       "model": "Checkin",

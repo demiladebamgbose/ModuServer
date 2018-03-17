@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "poi": {
+      "type": "belongsTo",
+      "model": "Poi",
+      "foreignKey": "poiId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

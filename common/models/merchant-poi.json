@@ -16,7 +16,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "poi": {
+      "type": "belongsTo",
+      "model": "Poi",
+      "foreignKey": "poiId"
+    },
+    "merchant": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
