@@ -51,6 +51,18 @@
       "model": "Poi",
       "foreignKey": "",
       "through": "MerchantPoi"
+    },
+    "requesting": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "requesterId",
+      "through": "PersonFollow"
+    },
+    "requested": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": "requesteeId",
+      "through": "PersonFollow"
     }
   },
   "acls": [],

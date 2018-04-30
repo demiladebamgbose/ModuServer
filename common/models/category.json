@@ -1,6 +1,5 @@
 {
   "name": "Category",
-  "plural": "categoties",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

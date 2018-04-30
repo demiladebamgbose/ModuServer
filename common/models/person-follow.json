@@ -21,7 +21,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "requesting": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "requesterId"
+    },
+    "requested": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "requesteeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
