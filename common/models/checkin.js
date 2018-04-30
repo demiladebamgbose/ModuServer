@@ -1,5 +1,5 @@
-'use strict';
 
-module.exports = function(Checkin) {
+
+module.exports = function (Checkin) {
 
 };

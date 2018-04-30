@@ -1,5 +1,5 @@
-'use strict';
 
-module.exports = function(PoiFollow) {
+
+module.exports = function (PoiFollow) {
 
 };

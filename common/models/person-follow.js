@@ -1,5 +1,5 @@
-'use strict';
 
-module.exports = function(PersonFollow) {
+
+module.exports = function (PersonFollow) {
 
 };
