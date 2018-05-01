@@ -1,18 +1,20 @@
 {
   "name": "PersonFollow",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "requestee_id": {
+    "requesteeId": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id": 1
     },
-    "requester_id": {
+    "requesterId": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id": 2
     },
     "approved": {
       "type": "boolean",
