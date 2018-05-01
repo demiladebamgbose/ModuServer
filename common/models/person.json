@@ -63,6 +63,12 @@
       "model": "Person",
       "foreignKey": "requesteeId",
       "through": "PersonFollow"
+    },
+    "role": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "principalId",
+      "through": "RoleMapping"
     }
   },
   "acls": [],
