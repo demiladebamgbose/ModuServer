@@ -25,7 +25,7 @@
     "merchant": {
       "type": "belongsTo",
       "model": "Person",
-      "foreignKey": "personId"
+      "foreignKey": "merchantId"
     }
   },
   "acls": [],

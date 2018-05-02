@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
-    "node": ">=4"
+    "node": "8.*"
   },
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
     "migrate": "node scripts/run-migrations.js",
-    "dev": "./node_modules/.bin/nodemon ./server.js"
+    "dev": "./node_modules/.bin/nodemon ./server.js",
+    "pretest": "NODE_ENV=test npm run migrate",
+    "test": "NODE_ENV=test mocha"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -20,15 +22,18 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
     "loopback-connector-postgresql": "^2.9.0",
+    "loopback-setup-remote-methods-mixin": "^1.0.4",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "dotenv": "^5.0.1",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-loopback": "^8.0.0",
     "eslint-plugin-import": "^2.9.0",
+    "mocha": "^5.1.1",
     "nodemon": "^1.17.1",
     "nsp": "^2.1.0"
   },

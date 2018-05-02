@@ -1,5 +1,5 @@
-'use strict';
 
-module.exports = function(MerchantPoi) {
+
+module.exports = function (MerchantPoi) {
 
 };

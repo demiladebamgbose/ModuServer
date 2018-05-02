@@ -1,5 +1,5 @@
-'use strict';
 
-module.exports = function(PoiGallery) {
+
+module.exports = function (PoiGallery) {
 
 };
