@@ -1,5 +1,5 @@
 module.exports = function (PersonFollow) {
-  PersonFollow.observe('before save', async (ctx, next) => {
+  async function beforeSave(ctx, next) {
     const data = ctx.instance || ctx.data;
     const existingData = await PersonFollow.findOne({
       where: {
@@ -12,5 +12,7 @@ module.exports = function (PersonFollow) {
     }
 
     throw (new Error('data exists in the database'));
-  });
+  }
+
+  PersonFollow.observe('before save', beforeSave);
 };

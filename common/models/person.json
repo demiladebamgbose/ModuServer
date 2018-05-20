@@ -47,7 +47,7 @@
       "foreignKey": "personId"
     },
     "pois": {
-      "type": "hasMany",
+       "type": "hasMany",
       "model": "Poi",
       "foreignKey": "",
       "through": "MerchantPoi"
@@ -68,7 +68,8 @@
       "type": "hasMany",
       "model": "Role",
       "foreignKey": "principalId",
-      "through": "RoleMapping"
+      "through": "RoleMapping",
+      "keyThrough": "principalId"
     }
   },
   "acls": [],
