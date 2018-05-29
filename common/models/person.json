@@ -50,7 +50,7 @@
     "pois": {
       "type": "hasMany",
       "model": "Poi",
-      "foreignKey": "",
+      "foreignKey": "merchantId",
       "through": "MerchantPoi"
     },
     "requesting": {
@@ -106,6 +106,27 @@
       "principalId": "admin",
       "permission": "ALLOW",
       "property": "addMerchant"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__findById__pois"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__updateById__pois"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "merchant",
+      "permission": "ALLOW",
+      "property": "__get__pois"
     }
   ],
   "methods": {}
