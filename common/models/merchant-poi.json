@@ -22,7 +22,7 @@
       "model": "Poi",
       "foreignKey": "poiId"
     },
-    "merchant": {
+    "person": {
       "type": "belongsTo",
       "model": "Person",
       "foreignKey": "merchantId"

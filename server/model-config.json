@@ -42,7 +42,15 @@
   },
   "Role": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "relations": {
+      "person": {
+        "type": "hasMany",
+        "model": "Person",
+        "foreignKey": "roleId",
+        "through": "RoleMapping"
+      }
+    }
   },
   "Poi": {
     "dataSource": "db",
