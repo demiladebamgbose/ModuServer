@@ -1,12 +1,26 @@
 import Auth from './../components/auth.js';
 import Home from './../components/home.js';
 
+import { checkRole } from './../services/auth.js';
+
 const authenticationGuard = (to, from, next) => {
   if (!localStorage.getItem('token')) {
     next('auth');
     return;
   }
   next();
+};
+
+const authorizationGuard = (to, from, next) => {
+  const { userId } = localStorage;
+  Promise.all([checkRole(userId, 'super'), checkRole(userId, 'super')])
+  .then((result) => {
+    if (result.every(r => r.data)) {
+     next()
+    } else {
+      next('auth');
+    }
+  }).catch(err => next('auth'));
 };
 
 const routes = [
@@ -17,7 +31,7 @@ const routes = [
   {
     path: '/',
     component: Home,
-    beforeEnter: authenticationGuard,
+    beforeEnter: VueRouterMultiguard([authenticationGuard, authorizationGuard]),
   }
 ];
 
