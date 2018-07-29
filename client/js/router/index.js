@@ -1,6 +1,14 @@
 import Auth from './../components/auth.js';
 import Home from './../components/home.js';
 
+const authenticationGuard = (to, from, next) => {
+  if (!localStorage.getItem('token')) {
+    next('auth');
+    return;
+  }
+  next();
+};
+
 const routes = [
   {
     path: '/auth',
@@ -9,6 +17,7 @@ const routes = [
   {
     path: '/',
     component: Home,
+    beforeEnter: authenticationGuard,
   }
 ];
 

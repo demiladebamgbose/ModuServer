@@ -1,3 +1,5 @@
+import { checkRole } from './../services/auth.js';
+
 export default {
   name: 'Auth',
   data() {
@@ -20,10 +22,17 @@ export default {
               console.log(res.data)
               const token = res.data.id;
               const { user, userId } = res.data;
-              localStorage.setItem('token', token);
-              localStorage.setItem('user', JSON.stringify(user));
-              localStorage.setItem('userId', userId);
-              this.$router.push('/')
+
+              Promise.all([checkRole(userId, 'super'), checkRole(userId, 'super')])
+              .then((result) => {
+                console.log(result)
+                if (result.every(r => r.data)) {
+                  localStorage.setItem('token', token);
+                  localStorage.setItem('user', JSON.stringify(user));
+                  localStorage.setItem('userId', userId);
+                  this.$router.push('/')
+                }
+              });
             })
             .catch((err) => {
               this.errorMessage = 'Authentication failed, please try again';
