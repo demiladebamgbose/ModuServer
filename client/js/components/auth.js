@@ -8,7 +8,9 @@ export default {
         email: '',
         password: '',
       },
-      errorMessage: ''
+      errorMessage: '',
+      loadingMessage: '',
+      isLoading: '',
     };
   },
   methods: {
@@ -16,25 +18,29 @@ export default {
       this.errorMessage = '';
       this.$validator.validateAll().then((result) => {
         if (result) {
-          // this.isLoading = true;
+          this.isLoading = true;
+          this.loadingMessage = 'Authenticating'
           this.attemptLogin(this.user)
             .then((res) => {
-              console.log(res.data)
               const token = res.data.id;
               const { user, userId } = res.data;
 
+              this.loadingMessage = 'Checking Authorization';
               Promise.all([checkRole(userId, 'super'), checkRole(userId, 'super')])
               .then((result) => {
-                console.log(result)
+                this.isLoading = false;
                 if (result.every(r => r.data)) {
                   localStorage.setItem('token', token);
                   localStorage.setItem('user', JSON.stringify(user));
                   localStorage.setItem('userId', userId);
                   this.$router.push('/')
+                } else {
+                  this.errorMessage = 'Not authorized to view this page';
                 }
               });
             })
             .catch((err) => {
+              this.isLoading = false;
               this.errorMessage = 'Authentication failed, please try again';
             });
         }
@@ -79,6 +85,13 @@ export default {
           </button>
         </div>
       </form>
+
+      <div class="loader-container" v-if="isLoading">
+        <div class="loader">
+          <i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
+          <p>{{loadingMessage}}</p>
+        </div>
+      </div>
     </div>
   </div>`,
 };

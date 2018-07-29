@@ -45,6 +45,33 @@
       .container[auth-component] form button:hover {
         cursor: pointer;
         box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.25); }
+  .container[auth-component] .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #191b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container[auth-component] .loader-container .loader {
+      height: 150px;
+      width: 150px;
+      background-color: #fff;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .container[auth-component] .loader-container .loader i {
+        font-size: 90px; }
+        .container[auth-component] .loader-container .loader i.fa-spin {
+          animation-duration: 0.5s; }
+      .container[auth-component] .loader-container .loader p {
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: center; }
 
 .error-message {
   font-size: 12px;

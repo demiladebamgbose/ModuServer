@@ -61,4 +61,41 @@
       }
     }
   }
+
+  .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #191b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader {
+      height: 150px;
+      width: 150px;
+      background-color: $white;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      i {
+        font-size: 90px;
+
+        &.fa-spin {
+          animation-duration: 0.5s;
+        }
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
 }
