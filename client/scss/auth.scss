@@ -1,0 +1,64 @@
+@import "colors";
+
+.container[auth-component] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    width: 50%;
+
+    .form-group {
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #434C5E;
+        letter-spacing: 1px;
+      }
+
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+        border-radius: 3px;
+        border: 1px solid #D4D9E2;
+        font-size: 14px;
+        color: #596377;
+        outline: 0;
+
+        &::placeholder {
+          color: #C6CCD7;
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      background: $cadmium-orange;
+      height: 50px;
+      margin: 20px auto;
+      padding: 0 60px;
+      border-radius: 100px;
+      line-height: 50px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      transition: box-shadow .2s ease,border .2s ease;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+      }
+    }
+  }
+}
