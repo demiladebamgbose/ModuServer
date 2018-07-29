@@ -1,23 +1,22 @@
 module.exports = function (app) {
-  const { Person, Poi, Role } = app.models;
+  const { Poi, Role } = app.models;
 
-/**
- * Role resolver for checking if the user making the request is the merchant for the poi
- * 
- * @param {any} role
- * @param {any} ctx
- * @param {function} cb
- */
-  Role.registerResolver('$merchantPoi', async (role, ctx, cb) => {
+  /**
+   * Role resolver for checking if the user making the request is the merchant for the poi
+   *
+   * @param {any} role
+   * @param {any} ctx
+   * @param {function} cb
+   */
+  Role.registerResolver('$merchantPoi', (role, ctx, cb) => {
     if (ctx.modelName !== 'Poi') {
-      callback(null, false);
-      return;
+      return cb(null, false);
     }
 
     const poiId = parseInt(ctx.modelId, 10);
     const merchantId = context.accessToken && context.accessToken.userId;
 
-    if (!userId) {
+    if (!merchantId) {
       cb(null, false);
     } else {
       // find the poi in question

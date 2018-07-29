@@ -116,4 +116,42 @@ module.exports = function (Person) {
     },
     returns: { arg: 'data', type: 'object', root: true },
   });
+
+  Person.prototype.hasRole = async function (roleName) {
+    const { id } = this;
+    const { Role, RoleMapping } = Person.app.models;
+    let role;
+    let roles;
+
+    try {
+      role = await Role.findOne({ where: { name: roleName } });
+    } catch (err) {
+      throw err;
+    }
+
+    if (!role) {
+      return false;
+    }
+
+    try {
+      roles = await Role.getRoles({ principalType: RoleMapping.USER, principalId: id });
+    } catch (err) {
+      throw err;
+    }
+
+    return roles.includes(role.toJSON().id);
+  };
+
+  Person.remoteMethod('hasRole', {
+    isStatic: false,
+    accepts: {
+      arg: 'roleName',
+      type: 'string',
+      required: true,
+    },
+    http: {
+      verb: 'post',
+    },
+    returns: { arg: 'data', type: 'Boolean', root: true },
+  });
 };
