@@ -6,14 +6,23 @@ export default {
         {
           label: 'HOME',
           icon: 'images/home.svg',
+          roles: [],
+          children: [],
+          active: true,
         },
         {
           label: 'USERS',
           icon: 'images/user.svg',
+          roles: [],
+          children: [],
+          active: false,
         },
         {
           label: 'POIs',
           icon: 'images/poi.svg',
+          roles: [],
+          children: [],
+          active: false,
         },
       ]
     };
