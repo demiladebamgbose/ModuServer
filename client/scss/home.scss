@@ -1,0 +1,27 @@
+@import "colors";
+
+div[home-component] {
+  background-color: map-get($greys, solitude);
+  min-height: 100vh;
+
+  .header {
+    height: 80px;
+    width: 100%;
+    background-color: $white;
+    position: relative;
+
+    .action {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+
+      * {
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
