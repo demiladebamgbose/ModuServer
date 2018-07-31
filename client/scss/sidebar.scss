@@ -1,0 +1,51 @@
+@import "colors";
+
+.sidebar[side-bar-component] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  .row {
+    height: 100%;
+  }
+
+  .main-nav {
+    background-color: $black-rock;
+    color: map-get($map: $greys, $key: shuttle-gray);
+    padding: 0;
+
+    .logo {
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-items {
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+
+      p {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .sub-nav {
+    background-color: $blue-charcoal;
+    padding: 0;
+
+    .subtop {
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.07);
+    }
+  }
+}

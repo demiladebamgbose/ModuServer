@@ -73,6 +73,39 @@
         font-size: 12px;
         text-align: center; }
 
+.sidebar[side-bar-component] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+  .sidebar[side-bar-component] .row {
+    height: 100%; }
+  .sidebar[side-bar-component] .main-nav {
+    background-color: #2F323E;
+    color: #606A78;
+    padding: 0; }
+    .sidebar[side-bar-component] .main-nav .logo {
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .sidebar[side-bar-component] .main-nav .menu-items {
+      margin-top: 30px; }
+    .sidebar[side-bar-component] .main-nav .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px; }
+      .sidebar[side-bar-component] .main-nav .menu-item p {
+        font-size: 9px; }
+  .sidebar[side-bar-component] .sub-nav {
+    background-color: #262A34;
+    padding: 0; }
+    .sidebar[side-bar-component] .sub-nav .subtop {
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.07); }
+
 .error-message {
   font-size: 12px;
   color: #f53d3d; }

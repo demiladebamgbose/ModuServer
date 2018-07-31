@@ -12,11 +12,7 @@
       }
     },
     "helmet#xssFilter": {},
-    "helmet#frameguard": {
-      "params": [
-        "deny"
-      ]
-    },
+    "helmet#frameguard": {},
     "helmet#hsts": {
       "params": {
         "maxAge": 0,
